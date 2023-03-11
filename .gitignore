@@ -25,7 +25,7 @@ hs_err_pid*
 =======
 HELP.md
 target/
-!**.mvn/wrapper/maven-wrapper.jar
+.mvn
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -43,10 +43,9 @@ target/
 *.iws
 *.iml
 *.ipr
-.mvn
-*mvnw
+mvnw.cmd
 *mvnw.cmd
-HELP.md
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
