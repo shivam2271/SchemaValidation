@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: OpenAPI Specification for schema validation
+  version: 1.0.0
+tags:
+  - name: JsonSchema
+    description: Supports for string format
+
+paths:
+  /kp:
+    post:
+      tags:
+        - jsonSchema
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              $ref: '#/components/schemas/jsonSchema'
+      responses:
+        '200':
+          description: success
+components:
+  schemas:
+    jsonSchema:
+      type: object
+      properties:
+        testName:
+          type: string
+          example: shivam
+        testAge:
+          type: string
+          example: 5
+        testAddress:
+          type: string
+          example: porsa
+
